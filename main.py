@@ -25,16 +25,19 @@ scr.penup()
 scr.hideturtle()
 scr.setposition(0, 600 // 2 - 50)
 scr.write(f"SCORE: {score}", align="center", font=("Verdana", 16, "bold"))
+
 def time_display():
     if timer >= 0:
         t.write(f"TIME: {timer}", align="center", font=("Verdana", 12, "normal"))
         time.sleep(1)
     t.clear()
+
 def rand_position():
     #Random Turtle konumu oluştur
     x = randint(-320, 320)
     y = randint(-280, 250)
     return [x, y]
+
 def turtle_move():
     #gelen random (x, y) ikililerine göre Turtle'ı konumlandırma
     turtle_.setposition(rand_position()[0], rand_position()[1])
