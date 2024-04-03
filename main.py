@@ -50,7 +50,7 @@ def compare_positions(click_posx, click_posy):
         score += 1
     scr.write(f"SCORE: {score}", align="center", font=("Verdana", 16, "bold"))
 
-timer = 5
+timer = 20
 while timer > 0:
     turtle_move()
     pyt_screen.onclick(fun=compare_positions)
